@@ -3,44 +3,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between sticky-top">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo-medium.jpg" alt="">
+                <img src="./images/logo-medium.png" alt="">
             </a>
-            <div class="d-inline-flex options" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="nav navbar-nav  align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="index.html"><h2>Home</h2></a>
+                        <a class="nav-link text-light" href="index.html"><h2>Home</h2></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="about.html"><h2>About</h2></a>
+                        <a class="nav-link text-light" href="about.html"><h2>About</h2></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="services.html"><h2>Services</h2></a>
+                        <a class="nav-link text-light" href="services.html"><h2>Services</h2></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="gallery.html"><h2>Gallery</h2></a>
+                        <a class="nav-link text-light" href="gallery.html"><h2>Gallery</h2></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="contact.html"><h2>Contact</h2></a>
+                        <a class="nav-link text-light" href="contact.html"><h2>Contact</h2></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
         <div class="container-fluid">
             <div class="row about-banner">
                 <img class="banner" src="./images/landing-banner.jpg" alt="">
                 <div class="subpage-banner-text">
-                    <div class="subpage-title">Contact Us</div>
+                    <div class="subpage-title">Get in touch</div>
                 </div>
             </div>
+
+
+            <!-- Contact -->
+            <div class="row contact-section text-light">
+                <div class="container d-flex align-items-center">
+                    <div class="row d-flex align-items-center">
+                        <form class="col-lg-6" style="padding: 50px;">
+                            <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">First Name</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Last Name</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="inputAddress">Email</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                            </div>
+                            <div class="form-group" style="height: 20vh;">
+                            <label for="inputAddress2">Message</label>
+                            <input type="text" class="form-control" id="inputAddress2" style="height: 80%;">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                        <div class="col-lg-6" style="padding: 50px;">
+                            <div class="row text-danger">
+                                <div style="font-size: 1em;">
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, British Columbia</li>
+                                        <li><span class="fa-li"><i class="fa fa-mobile"></i></span>778-522-1333</li>
+                                        <li><span class="fa-li"><i class="fa fa-paper-plane"></i></span>j.li@credton.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img class="col-lg-12" src="images/richmond.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact -->
+
+            <!-- Footer -->
+            <div class="row footer bg-dark">
+                <div class="row col-lg-4 text-light  align-items-center">
+                    <div class="mx-auto col-lg-4" style="font-size: 1em;">
+                        <ul class="fa-ul">
+                            <li><b>About</b> </li>
+                            <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, BC</li>
+                            <li><span class="fa-li"><i class="fa fa-mobile"></i></span>778-522-1333</li>
+                            <li><span class="fa-li"><i class="fa fa-paper-plane"></i></span>j.li@credton.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-lg-4 text-light  align-items-center">
+                    <div class="mx-auto col-lg-4" style="font-size: 1em;">
+                        <ul class="fa-ul">
+                            <li><b>Clients</b> </li>
+                            <li>22nd Steet - Urban Studio</li>
+                            <li>4621 Kingsway</li>
+                            <li>8171 Saba Road</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-lg-4 text-light align-items-center">
+                    <div class="mx-auto col-lg-4" style="font-size: 1em;">
+                        <ul class="fa-ul">
+                            <li><b>Links</b> </li>
+                            <li><a class="text-light" href="index.html">Home</a></li>
+                            <li><a class="text-light" href="about.html">About</a></li>
+                            <li><a class="text-light" href="services.html">Services</a></li>
+                            <li><a class="text-light" href="gallery.html">Gallery</a></li>
+                            <li><a class="text-light" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row section copyright">
+                <span class="text-light mx-auto">Copyright &#169; 2020 Credton Construction</span>
+            </div>
+            <!-- End Footer -->
         </div>
-
-
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
