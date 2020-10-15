@@ -153,7 +153,6 @@ body {
 
 .service-background {
     background:url('../images/3.jpg');
-    background-color: black;
     position: relative;
     background-size:cover; /* cover will scale the image so that the smallest dimension = the widest dimension of the box */
     background-position:center; /* vs the top-left that is default */
@@ -170,8 +169,9 @@ body {
     background: rgba(0,0,0,0.85);
 }
 
-.container-fludi {
+.container-fluid {
     margin-bottom: 0;
+    padding: 0;
 }
 
 html {
@@ -181,4 +181,42 @@ html {
 @font-face {
     font-family: "sans-serif-italic";
     src: url(../fonts/SansSerifBldFLF-Italic.otf);
+}
+
+/*about page*/
+.bg-overlay-1 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+.bg-overlay-2 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+.bg-overlay-3 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+.bg-overlay-4 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
 }
