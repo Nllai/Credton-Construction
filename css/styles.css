@@ -1,5 +1,5 @@
 body {
-    font-family: Sans-Serif;
+    font-family: sans-serif-italic;
     margin: 0;
     padding: 0;
     border: 0;
@@ -176,4 +176,9 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "sans-serif-italic";
+    src: url(../fonts/SansSerifBldFLF-Italic.otf);
 }
