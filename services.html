@@ -8,77 +8,79 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between sticky-top">
+        <nav id="nav" class="navbar navbar-fixed-top navbar-expand-lg navbar-light justify-content-between sticky clear" style="width: 100%">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo-medium.png" alt="">
+                <img id="logo" src="./images/logo-medium.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="nav navbar-nav  align-items-end">
+                <ul class="nav navbar-nav align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html"><h2>Home</h2></a>
+                        <a class="nav-link text-light" href="index.html"><h3>HOME</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="about.html"><h2>About</h2></a>
+                        <a class="nav-link text-light" href="about.html"><h3>ABOUT</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="services.html"><h2>Services</h2></a>
+                        <a class="nav-link text-light" href="services.html"><h3>SERVICES</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="gallery.html"><h2>Gallery</h2></a>
+                        <a class="nav-link text-light" href="gallery.html"><h3>GALLERY</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="contact.html"><h2>Contact</h2></a>
+                        <a class="nav-link text-light" href="contact.html"><h3>CONTACT</h3></a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="row sub-service-banner">
+            <div class="subpage-banner-text">
+                <div class="subpage-title">Services</div>
+            </div>
+        </div>
 
         <div class="container-fluid">
-            <div class="row about-banner">
-                <img class="banner" src="./images/landing-banner.jpg" alt="">
-                <div class="subpage-banner-text">
-                    <div class="subpage-title">Services</div>
-                </div>
-            </div>
-
-
-            <div class="row bg-dark service-background">
+            <div class="row bg-light">
                 <div class="container-fluid d-flex align-items-center">
-                    <div class="mx-auto text-light col-lg-6" style="margin: 10vh;">
-                        <p class="text-left"><b>We specialize in New Homes Construction, Residential Renovations, Commercial Tenant Improvement.</b></p>
-                        <p class="text-left">
+                    <div class="mx-auto text-dark col-lg-9" style="margin: 20vh auto 60px auto; padding: 0px 35px 0px 35px;">
+                        <p class="text-left" style="font-size: 20pt;"><b>We specialize in New Homes Construction, Residential Renovations, Commercial Tenant Improvement.</b></p>
+                        <p class="text-justify" style="font-size: 18pt; padding-top: 30px">
                             Working with us will help you picture the design visions, tailor a comprehensive budget and construction plan to suit your special needs.
                             No matter what size of work will be performed, we understand and respect our clients’ demand, and will work in a transparency environment to keep our clients with us throughout the entire construction. Our clients will be informed all the time where we spend the budget and how we go through the whole process.
                         </p>
                     </div>
                 </div>
 
-                <div class="container d-flex align-items-center">
+                <div class="container-fluid d-flex align-items-center">
                     <div class="row">
-                        <div class="col-lg-5 d-flex text-light text-center card" style="margin: 0 auto 50px auto; padding: 50px; ">
-                            <span class="mx-auto" style="font-size: 60px; color: white;">
-                                <i class="fa fa-home"></i>
-                            </span>
-                            <p style="font-size: 20px;"><b>New Home Construction</b></p>
-                            <p class="text-left">Building a New Home is a big move and exciting commitment. From ground-up to a dream home you pictured for us, we will always deliver your highest level of quality control, hands-on style project management service. </p>
-                            <p class="text-left">We will take firm credibility as principle to guide our construction, and our goal is to ensure that our client will have an interactive and enjoyable experience.</p>
-                            <p class="text-left">Also our team works closely with reputable architects, engineers, and interior designers to create unique and built-to-last structures to reflect your vision and your style.</p>
-                            <p class="text-left">At Credton Construction we are committed to being your credible partner and striving to deliver excellence and excitement to your new home by assisting you in refining your dream and turning it into a reality.</p>
-
+                        <div class="col-lg-5 d-flex text-light text-center card bg-overlay-service-1" style="margin: 0 1% 50px auto; padding: 30px 6% 50px 6%;">
+                            <div class="card-body d-flex flex-column">
+                                <span class="mx-auto" style="font-size: 100px;">
+                                    <img src="./images/services-icon-1.png" alt="" style="width: 1em; padding-bottom: 0.1em;">
+                                </span>
+                                <p style="font-size: 30px; padding-bottom: 50px;"><b>New Home Construction</b></p>
+                                <p style="font-size: 22px;" class="text-justify">Building a New Home is a big move and exciting commitment. From ground-up to a dream home you pictured for us, we will always deliver your highest level of quality control, hands-on style project management service. </p>
+                                <p style="font-size: 22px;" class="text-justify">We will take firm credibility as principle to guide our construction, and our goal is to ensure that our client will have an interactive and enjoyable experience.</p>
+                                <p style="font-size: 22px;" class="text-justify">Also our team works closely with reputable architects, engineers, and interior designers to create unique and built-to-last structures to reflect your vision and your style.</p>
+                                <p style="font-size: 22px; padding-bottom: 2em;" class="text-justify">At Credton Construction we are committed to being your credible partner and striving to deliver excellence and excitement to your new home by assisting you in refining your dream and turning it into a reality.</p>
+                                <a role="button" href="learn-more-home.html" class="btn btn-danger btn-lg shadow-lg align-self-center mt-auto" style="width: 50%; font-size: 20pt; font-weight: 900; padding-left: 25px; padding-right: 25px;">Learn More</a>
+                            </div>
                         </div>
-                        <div class="col-lg-5 d-flex text-light text-center card" style="margin: 0 auto 50px auto; padding: 50px;">
-                            <span class="mx-auto" style="font-size: 60px; color: white;">
-                                <i class="fa fa-building"></i>
-                            </span>
-                            <p style="font-size: 20px;"><b>Commercial / Residential Renovation</b></p>
-                            <p class="text-left">Renovations will include anything from refinishing one small room to navigate new ideas for each area. Whichever project size will be, Credton Renovations works with our clients to build their dream place.</p>
-                            <p class="text-left">As a top contractor serving local community, we know that the best way to start a Renovation is to help our clients create a firm understanding of how they will use the space, what is their special preference and how much budget will be settled into our Renovations.</p>
-                            <p class="text-left">We will help our client create a realistic budget and schedule, following by our firm principle: Credibility.</p>
-                            <p class="text-left">We will design and optimize your space. Build your dreams!</p>
-                            <p class="text-left">At Credton Construction we are committed to being your credible partner and striving to deliver excellence and excitement to your new home by assisting you in refining your dream and turning it into a reality.</p>
+                        <div class="col-lg-5 d-flex text-light text-center card bg-overlay-service-2" style="margin: 0 auto 50px 1%; padding: 30px 6% 50px 6%;">
+                            <div class="card-body d-flex flex-column">
+                                <span class="mx-auto" style="font-size: 100px;">
+                                    <img src="./images/services-icon-2.png" alt="" style="width: 1em; padding-bottom: 0.1em;">
+                                </span>
+                                <p style="font-size: 3vh; padding-bottom: 50px;"><b>Commercial / Residential Renovation</b></p>
+                                <p style="font-size: 22px;" class="text-justify">Renovations will include anything from refinishing one small room to navigate new ideas for each area. Whichever project size will be, Credton Renovations works with our clients to build their dream place.</p>
+                                <p style="font-size: 22px;" class="text-justify">As a top contractor serving local community, we know that the best way to start a Renovation is to help our clients create a firm understanding of how they will use the space, what is their special preference and how much budget will be settled into our Renovations.</p>
+                                <p style="font-size: 22px;" class="text-justify">We will help our client create a realistic budget and schedule, following by our firm principle: Credibility.</p>
+                                <p style="font-size: 22px;" class="text-justify">We will design and optimize your space. Build your dreams!</p>
+                                <p style="font-size: 22px; padding-bottom: 2em" class="text-justify">At Credton Construction we are committed to being your credible partner and striving to deliver excellence and excitement to your new home by assisting you in refining your dream and turning it into a reality.</p>
+                                <a role="button" href="learn-more-commercial.html" class="btn btn-danger btn-lg shadow-lg align-self-center mt-auto" style="width: 50%; font-size: 20pt; font-weight: 900; padding-left: 25px; padding-right: 25px;">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,8 +88,13 @@
 
             <!-- Footer -->
             <div class="row footer bg-dark">
-                <div class="row col-lg-4 col-sm-4 text-light align-items-center">
-                    <div class="mx-auto" style="font-size: 1em;">
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                    <div style="font-size: 1em; padding-left: 10vh;">
+                        <img src="./images/logo-medium.png" alt="">
+                    </div>
+                </div>
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                    <div style="font-size: 1.5em; padding-left: 10vh;">
                         <ul class="fa-ul">
                             <li><b>About</b> </li>
                             <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, BC</li>
@@ -96,18 +103,19 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row col-lg-4 col-sm-4 text-light  align-items-center">
-                    <div class="mx-auto" style="font-size: 1em;">
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                    <div style="font-size: 1.5em; padding-left: 10vh;">
                         <ul class="fa-ul">
                             <li><b>Clients</b> </li>
                             <li>22nd Steet - Urban Studio</li>
                             <li>4621 Kingsway</li>
                             <li>8171 Saba Road</li>
+                            <li>...More</li>
                         </ul>
                     </div>
                 </div>
-                <div class="row col-lg-4 col-sm-4 text-light align-items-center">
-                    <div class="mx-auto" style="font-size: 1em;">
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                    <div style="font-size: 1.5em; padding-left: 10vh;">
                         <ul class="fa-ul">
                             <li><b>Links</b> </li>
                             <li><a class="text-light" href="index.html">Home</a></li>
@@ -120,10 +128,11 @@
                 </div>
             </div>
             <div class="row section copyright">
-                <span class="text-light mx-auto">Copyright &#169; 2020 Credton Construction</span>
+                <span class="text-light mx-auto align-self-center" style="font-size: 1.5em;">Copyright &#169; 2020 Credton Construction</span>
             </div>
             <!-- End Footer -->
         </div>
+        <script src="js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -1,0 +1,25 @@
+.pg-2 {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+
+.pg-3 {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+.inactive {
+    display: none !important;
+}
+
+#spinner {
+    padding-top: 1em;
+    position: absolute;
+}

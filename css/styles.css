@@ -1,5 +1,4 @@
 body {
-    font-family: sans-serif-italic;
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,12 +10,53 @@ body {
 
 .banner {
     width: 100%;
-    height: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+.sub-about-banner {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/head/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 70vh;
+}
+
+.sub-contact-banner {
+    width: 100%;
+    height: 50vh;
+    object-fit: fill;
+}
+
+
+.sub-service-banner {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/head/hd-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 70vh;
+}
+
+
+
+.sub-gallery-banner {
+    width: 100%;
+    height: 70vh;
+    object-fit: fill;
+}
+
+
+.learn-banner {
+    width: 100%;
+    height: 30vh;
     object-fit: cover;
 }
 
 .navbar {
-    height: 10vh;
+    font-family: sans-serif-FLF;
+    height: 20vh;
 }
 
 .navbar-brand {
@@ -24,7 +64,9 @@ body {
 }
 
 .navbar-brand img {
-    padding-left: 30px;
+    padding-top: 1vw;
+    padding-left: 4vw;
+    padding-bottom: 1vw;
     height: inherit;
 }
 
@@ -41,21 +83,22 @@ body {
 @media only screen and (max-width: 768px) {
     .title {
         font-size: 8vw;
-        font-weight: 700;
+        font-weight: 500;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .title {
         font-size: 4vw;
-        font-weight: 700;
+        font-weight: 500;
     }
 }
 
 .subpage-title {
-    font-size: 60px;
-    font-weight: 700;
-    color: red;
+    font-family: OpenSansBold;
+    font-size: 95px;
+    font-weight: 400;
+    color: white;
 }
 
 /* title text end */
@@ -64,15 +107,38 @@ body {
 /* section heights */
 
 .title-banner {
-    height: 90vh;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
 }
 
 .about-banner {
-    height: 40vh;
+    height: 70vh;
+}
+
+.contact-banner {
+    height: 50vh;
+}
+
+
+.service-banner {
+    height: 70vh;
+}
+
+.gallery-banner {
+    height: 70vh;
+}
+
+.learn-home-banner {
+    height: 30vh;
 }
 
 .section {
-    height: 45vh;
+    height: 90vh;
+}
+
+.small-section {
+    height: 30vh;
 }
 
 .contact-section {
@@ -87,6 +153,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .title-banner-text {
+        font-family: OpenSansBold;
         position: absolute;
         bottom: 30vh;
         left: 5vw;
@@ -95,15 +162,22 @@ body {
 
 @media only screen and (min-width: 768px) {
     .title-banner-text {
+        font-family: OpenSansBold;
         position: absolute;
-        bottom: 30vh;
-        left: 25vw;
+        bottom: 5vh;
+        left: 5vw;
     }
 }
 
 .subpage-banner-text {
     position: absolute;
-    bottom: 65vh;
+    bottom: 35vh;
+    left: 10vw;
+}
+
+.contact-banner-text {
+    position: absolute;
+    bottom: 55vh;
     left: 10vw;
 }
 
@@ -114,13 +188,14 @@ body {
 
 .carousel-inner{
     width:100%;
-    max-height: 90vh;
+    max-height: 100%;
     object-fit: cover;
+    padding: 0;
   }
 
 .carousel-indicators li {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
 }
 
@@ -128,7 +203,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .footer {
-        height: 60vh;
+        height: 100vh;
     }
 
 }
@@ -136,37 +211,18 @@ body {
 
 @media only screen and (min-width: 768px) {
     .footer {
-        height: 30vh;
+        height: 45vh;
     }
 
 }
 
 .copyright {
     background-color: black;
-    height: 3vh;
+    height: 7vh;
 }
 
 .card {
     background-color: black;
-}
-
-
-.service-background {
-    background:url('../images/3.jpg');
-    position: relative;
-    background-size:cover; /* cover will scale the image so that the smallest dimension = the widest dimension of the box */
-    background-position:center; /* vs the top-left that is default */
-
-}
-
-.service-background:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.85);
 }
 
 .container-fluid {
@@ -174,24 +230,29 @@ body {
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+
+@media only screen and (max-width: 768px) {
+body{
+    width: 100vh;
 }
 
-@font-face {
-    font-family: "sans-serif-italic";
-    src: url(../fonts/SansSerifBldFLF-Italic.otf);
 }
 
-/*about page*/
+@media only screen and (min-width: 768px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* background images with tint */
 .bg-overlay-1 {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 450px;
-    padding-top: 50px;
+    padding: 10em 0 10em 0;
 }
 .bg-overlay-2 {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-1.jpg');
@@ -199,8 +260,7 @@ html {
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 450px;
-    padding-top: 50px;
+    padding: 10em 0 10em 0;
 }
 .bg-overlay-3 {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-6.jpg');
@@ -208,15 +268,190 @@ html {
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 450px;
-    padding-top: 50px;
+    padding: 10em 0 10em 0;
 }
+
 .bg-overlay-4 {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 450px;
+    padding: 10em 0 10em 0;
+}
+
+.bg-overlay-service-1 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/services1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
     padding-top: 50px;
 }
+
+.bg-overlay-service-2 {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/services2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.bg-overlay-learn-home {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+
+.row {
+    margin: 0;
+}
+
+
+.sticky {
+    position: fixed;
+    z-index: 9999;
+}
+
+
+.carousel {
+    height: inherit;
+}
+
+
+
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "sans-serif-italic";
+    src: url(../fonts/SansSerifBldFLF-Italic.otf);
+}
+
+
+@font-face {
+    font-family: "sans-serif-bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "sans-serif-FLF";
+    src: url(../fonts/SansSerifFLF-Demibold.otf);
+}
+
+@font-face {
+    font-family: "SansSerifBldFLF";
+    src: url(../fonts/SansSerifBldFLF.otf);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "OpenSansSemi";
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+
+.content-semibold {
+    font-family: OpenSansSemi
+    ;}
+
+
+
+.content-heading {
+    font-family: OpenSansBold;
+    font-size: 2.5em;
+}
+
+.content {
+    font-family: OpenSans;
+    font-size: 1.5em;
+}
+
+.btn {
+    font-family: OpenSansSemi;
+    background-color: #B62D3C;
+    color: white;
+}
+
+.nav {
+    padding-right: 3em;
+    transition: 2s;
+}
+
+.scrolled {
+    background-color: #333333 !important;
+    transition: background-color 300ms linear;
+  }
+
+.not-scrolled {
+    background-color: transparent;
+    transition: background-color 300ms linear;
+  }
+
+.bg-dark {
+    background-color: #333333 !important;
+}
+
+
+.about-section-padding {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.modal {
+    z-index: 99999;
+}
+
+.modal-image {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center 70%;
+}
+
+.modal-thumb {
+    height: 10vh;
+    object-fit: cover;
+    object-position: center 70%;
+}
+
+
+ul a:hover{
+    color: #B62D3C !important;
+  }
+  nav li{
+      text-align: center;
+      text-transform: uppercase;
+  }
+  li > a:after{
+      content: '';
+      display: block;
+      height: 5px;
+      background: #B62D3C;
+      transform: scaleX(0);
+      transition: transform .3s;
+  }
+  li > a:hover:after{
+      transform: scaleX(1);
+      transition: transform .3s;
+  }

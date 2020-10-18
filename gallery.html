@@ -3,87 +3,1332 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/scroll.css">
+        <link rel="stylesheet" href="./css/spinner.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between sticky-top">
+        <nav id="nav" class="navbar navbar-fixed-top navbar-expand-lg navbar-light justify-content-between sticky clear" style="width: 100%">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo-medium.png" alt="">
+                <img id="logo" src="./images/logo-medium.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="nav navbar-nav  align-items-end">
+                <ul class="nav navbar-nav align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html"><h2>Home</h2></a>
+                        <a class="nav-link text-light" href="index.html"><h3>HOME</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="about.html"><h2>About</h2></a>
+                        <a class="nav-link text-light" href="about.html"><h3>ABOUT</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="services.html"><h2>Services</h2></a>
+                        <a class="nav-link text-light" href="services.html"><h3>SERVICES</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="gallery.html"><h2>Gallery</h2></a>
+                        <a class="nav-link text-light" href="gallery.html"><h3>GALLERY</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="contact.html"><h2>Contact</h2></a>
+                        <a class="nav-link text-light" href="contact.html"><h3>CONTACT</h3></a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="row gallery-banner">
+            <img class="sub-gallery-banner" src="./images/head/hd-4.jpg" alt="">
+            <div class="subpage-banner-text">
+                <div class="subpage-title">Our Projects</div>
+            </div>
+        </div>
 
-        <div class="container-fluid">
-            <div class="row about-banner">
-                <img class="banner" src="./images/landing-banner.jpg" alt="">
-                <div class="subpage-banner-text">
-                    <div class="subpage-title">Gallery</div>
+        <div id="pg-1" class="container-fluid">
+            <div id='infinite-list' class="row section bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p1">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div class="row section">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                        </div>
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p2">
+                            <img style="width: 100%;" src="images/gallery/alteration/p1.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row section bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p3">
+                            <img style="width: 100%;" src="images/gallery/mech/p1.jpg"/>
+                        </a>
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                        </div>
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p4">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pg-2" class="container-fluid pg-2">
+            <div id='infinite-list' class="row section bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p5">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                        </div>
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p6">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p7">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                        </div>
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p8">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pg-3" class="container-fluid pg-3">
+            <div id='infinite-list' class="row section bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p9">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                        </div>
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p10">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p11">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row section">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div class="content-heading"><h3 style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                        </div>
+                        <a class="col-lg-5" role="button" data-toggle="modal" href="#p12">
+                            <img style="width: 100%;" src="images/gallery/urban/p1.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container-fluid">
             <!-- Footer -->
-            <div class="row footer bg-dark">
-                <div class="row col-lg-4 col-sm-4 text-light align-items-center">
-                    <div class="mx-auto" style="font-size: 1em;">
-                        <ul class="fa-ul">
-                            <li><b>About</b> </li>
-                            <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, BC</li>
-                            <li><span class="fa-li"><i class="fa fa-mobile"></i></span>778-522-1333</li>
-                            <li><span class="fa-li"><i class="fa fa-paper-plane"></i></span>j.li@credton.com</li>
-                        </ul>
-                    </div>
+            <div class="footer bg-dark align-items-center">
+                <div id="spinner" class="col text-center inactive">
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                 </div>
-                <div class="row col-lg-4 col-sm-4 text-light  align-items-center">
-                    <div class="mx-auto" style="font-size: 1em;">
-                        <ul class="fa-ul">
-                            <li><b>Clients</b> </li>
-                            <li>22nd Steet - Urban Studio</li>
-                            <li>4621 Kingsway</li>
-                            <li>8171 Saba Road</li>
-                        </ul>
+                <div class="row footer">
+                    <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                        <div style="font-size: 1em; padding-left: 10vh;">
+                            <img src="./images/logo-medium.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="row col-lg-4 col-sm-4 text-light align-items-center">
-                    <div class="mx-auto" style="font-size: 1em;">
-                        <ul class="fa-ul">
-                            <li><b>Links</b> </li>
-                            <li><a class="text-light" href="index.html">Home</a></li>
-                            <li><a class="text-light" href="about.html">About</a></li>
-                            <li><a class="text-light" href="services.html">Services</a></li>
-                            <li><a class="text-light" href="gallery.html">Gallery</a></li>
-                            <li><a class="text-light" href="contact.html">Contact</a></li>
-                        </ul>
+                    <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                        <div style="font-size: 1.5em; padding-left: 10vh;">
+                            <ul class="fa-ul">
+                                <li><b>About</b> </li>
+                                <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, BC</li>
+                                <li><span class="fa-li"><i class="fa fa-mobile"></i></span>778-522-1333</li>
+                                <li><span class="fa-li"><i class="fa fa-paper-plane"></i></span>j.li@credton.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row col-lg-3 col-sm-4 text-light  align-items-center">
+                        <div style="font-size: 1.5em; padding-left: 10vh;">
+                            <ul class="fa-ul">
+                                <li><b>Clients</b> </li>
+                                <li>22nd Steet - Urban Studio</li>
+                                <li>4621 Kingsway</li>
+                                <li>8171 Saba Road</li>
+                                <li>...More</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                        <div style="font-size: 1.5em; padding-left: 10vh;">
+                            <ul class="fa-ul">
+                                <li><b>Links</b> </li>
+                                <li><a class="text-light" href="index.html">Home</a></li>
+                                <li><a class="text-light" href="about.html">About</a></li>
+                                <li><a class="text-light" href="services.html">Services</a></li>
+                                <li><a class="text-light" href="gallery.html">Gallery</a></li>
+                                <li><a class="text-light" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row section copyright">
-                <span class="text-light mx-auto">Copyright &#169; 2020 Credton Construction</span>
+                <span class="text-light mx-auto align-self-center" style="font-size: 1.5em;">Copyright &#169; 2020 Credton Construction</span>
             </div>
             <!-- End Footer -->
         </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="p1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="p2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/alteration/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/alteration/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/alteration/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/alteration/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/alteration/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/alteration/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/alteration/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/alteration/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/alteration/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/alteration/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/alteration/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/alteration/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/mech/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/mech/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/mech/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/mech/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/mech/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/mech/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/mech/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/mech/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/mech/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/mech/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="p12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="images/gallery/urban/p1.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="images/gallery/urban/p2.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="images/gallery/urban/p3.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="images/gallery/urban/p4.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="images/gallery/urban/p5.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="images/gallery/urban/p6.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="images/gallery/urban/p7.jpg" class="modal-image d-block w-100" alt="..." data-type="image" data-toggle="lightbox">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                            <img src="images/gallery/urban/p1.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                            <img src="images/gallery/urban/p2.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                            <img src="images/gallery/urban/p3.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                            <img src="images/gallery/urban/p4.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="4">
+                                            <img src="images/gallery/urban/p5.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="5">
+                                            <img src="images/gallery/urban/p6.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                            <img src="images/gallery/urban/p7.jpg" class="modal-thumb w-100 img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/createModal.js"></script>
+        <script src="js/scroll.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

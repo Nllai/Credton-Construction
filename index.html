@@ -8,69 +8,69 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark justify-content-between sticky-top">
+        <nav id="nav" class="navbar navbar-fixed-top navbar-expand-lg navbar-light justify-content-between sticky clear" style="width: 100%">
             <a class="navbar-brand" href="#">
-                <img src="./images/logo-medium.png" alt="">
+                <img id="logo" src="./images/logo-medium.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="nav navbar-nav  align-items-end">
+                <ul class="nav navbar-nav align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html"><h2>Home</h2></a>
+                        <a class="nav-link text-light" href="index.html"><h3>HOME</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="about.html"><h2>About</h2></a>
+                        <a class="nav-link text-light" href="about.html"><h3>ABOUT</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="services.html"><h2>Services</h2></a>
+                        <a class="nav-link text-light" href="services.html"><h3>SERVICES</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="gallery.html"><h2>Gallery</h2></a>
+                        <a class="nav-link text-light" href="gallery.html"><h3>GALLERY</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="contact.html"><h2>Contact</h2></a>
+                        <a class="nav-link text-light" href="contact.html"><h3>CONTACT</h3></a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="row title-banner" style="background-image: url('./images/landing-banner.jpg'); background-size: 100% 100%; object-fit: cover;">
+            <div class="title-banner-text">
+                <div class="title">CREDIBILITY</div>
+                <div class="title">CONSISTENCY</div>
+                <div class="title">CONSTRUCTIVENESS</div>
+                <a role="button" href="gallery.html" class="btn btn-lg shadow-lg" style="font-size: 1.75em; margin-top: 50px; margin-left: 15px; padding-left: 25px; padding-right: 25px;">View Projects</a>
+
+            </div>
+        </div>
 
         <div class="container-fluid">
-            <div class="row title-banner">
-                <img class="banner" src="./images/landing-banner.jpg" alt="">
-                <div class="title-banner-text">
-                    <div class="title">CREDIBILITY</div>
-                    <div class="title">CONSISTENCY</div>
-                    <div class="title">CONSTRUCTIVENESS</div>
-                </div>
-            </div>
-
-            <div class="row section bg-dark">
-                <div class="container d-flex align-items-center">
-                    <div class="row d-flex align-items-center">
-                        <img class="col-lg-6" src="images/2.jpg"/>
-                        <div class="col-lg-6 text-light">
-                            <div class="content-heading"><h3>Construction Service</h3></div>
-                            <p>From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients</p>
+            <div class="row section bg-dark bg-overlay-home-construction">
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <img class="col-lg-5" src="images/2.jpg"/>
+                        <div class="col-lg-5 text-light align-self-start">
+                            <div><h3 class="content-heading" style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
+                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="row section bg-light">
-                <div class="container d-flex align-items-center">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-6 text-dark">
-                            <div class="content-heading"><h3>From Vision to Reality</h3></div>
-                            <p>We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget</p>
+                <div class="container-fluid d-flex align-items-center">
+                    <div class="row d-flex align-items-center justify-content-around">
+                        <div class="col-lg-5 text-dark align-self-start">
+                            <div><h3 class="content-heading" style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
+                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget.</p>
                         </div>
-                        <img class="col-lg-6" src="images/12.jpg"/>
+                        <img class="col-lg-5" src="images/12.jpg"/>
                     </div>
                 </div>
             </div>
 
-            <div class="row title-banner">
+            <div class="row banner">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -78,58 +78,67 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 " src="images/2.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/3.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/5.jpg" alt="Third slide">
-                    </div>
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/2.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/3.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/5.jpg" alt="Third slide">
+                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="row section bg-dark">
+            <div class="row bg-dark bg-overlay-home-construction">
                 <div class="container-fluid d-flex align-items-center">
-                        <h3 class="mx-auto text-light">Our Services</h3>
+                    <h3 class="content-heading mx-auto text-light align-self-end" style="font-size: 45px; font-weight: 900; padding-top: 1em;">Our Services</h3>
                 </div>
 
-                <div class="container d-flex align-items-center">
-                    <div class="col-lg-6 text-light text-center">
-                        <span class="mx-auto" style="font-size: 160px; color: white;">
-                            <i class="fa fa-home mx-auto"></i>
+                <div class="container-fluid d-flex justify-content-around" style="width: 100%;">
+                    <div class="col-lg-4 text-light text-center">
+                        <span class="mx-auto" style="font-size: 120px;">
+                            <img src="./images/services-icon-1.png" alt="" style="width: 1em; padding-bottom: 0.1em;">
                         </span>
-                        <p>New Home Construction</p>
+                        <p style="font-size: 40px;">New Home Construction</p>
                     </div>
-                    <div class="col-lg-6 text-light  text-center">
-                        <span classes="mx-auto" style="font-size: 160px; color: white;">
-                            <i class="fa fa-building"></i>
+                    <div class="col-lg-4 text-light  text-center">
+                        <span classes="mx-auto" style="font-size: 120px;">
+                            <img src="./images/services-icon-2.png" alt="" style="width: 1em; padding-bottom: 0.1em;">
                         </span>
-                        <p>Commercial / Residential Renovation</p>
+                        <p style="font-size: 40px;">Commercial / Residential Renovation</p>
                     </div>
+                </div>
+                <div class="container-fluid d-flex align-items-center col-lg-12 text-light text-center" style="padding-bottom: 3em;">
+                    <button type="button" class="btn btn-danger mx-auto btn-lg" style="font-size: 20pt; padding: 0.5em 25px 0.5em 25px;">Learn More</button>
                 </div>
             </div>
 
-            <div class="row section bg-light">
+            <div class="row small-section bg-light">
                 <div class="container d-flex align-items-center">
-                    <h1 class="text-danger" style="font-size: 60px;">Get in touch with us</h1>
+                    <h1 class="text-danger" style="font-size: 60px;">Get in touch with us today</h1>
                 </div>
             </div>
 
             <!-- Footer -->
             <div class="row footer bg-dark">
-                <div class="row col-lg-4 col-sm-4 text-light align-items-center">
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
                     <div style="font-size: 1em; padding-left: 10vh;">
+                        <img src="./images/logo-medium.png" alt="">
+                    </div>
+                </div>
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                    <div style="font-size: 1.5em; padding-left: 10vh;">
                         <ul class="fa-ul">
                             <li><b>About</b> </li>
                             <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, BC</li>
@@ -138,18 +147,19 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row col-lg-4 col-sm-4 text-light  align-items-center">
-                    <div style="font-size: 1em; padding-left: 10vh;">
+                <div class="row col-lg-3 col-sm-4 text-light  align-items-center">
+                    <div style="font-size: 1.5em; padding-left: 10vh;">
                         <ul class="fa-ul">
                             <li><b>Clients</b> </li>
                             <li>22nd Steet - Urban Studio</li>
                             <li>4621 Kingsway</li>
                             <li>8171 Saba Road</li>
+                            <li><a href="gallery.html">...More</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row col-lg-4 col-sm-4 text-light align-items-center">
-                    <div style="font-size: 1em; padding-left: 10vh;">
+                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
+                    <div style="font-size: 1.5em; padding-left: 10vh;">
                         <ul class="fa-ul">
                             <li><b>Links</b> </li>
                             <li><a class="text-light" href="index.html">Home</a></li>
@@ -162,11 +172,11 @@
                 </div>
             </div>
             <div class="row section copyright">
-                <span class="text-light mx-auto">Copyright &#169; 2020 Credton Construction</span>
+                <span class="text-light mx-auto align-self-center" style="font-size: 1.5em;">Copyright &#169; 2020 Credton Construction</span>
             </div>
             <!-- End Footer -->
         </div>
-
+        <script src="js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
