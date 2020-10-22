@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/learn.css">
+        <link rel="stylesheet" href="./css/button.css">
+
     </head>
     <body>
         <nav id="nav" class="navbar navbar-fixed-top navbar-expand-lg navbar-dark justify-content-between sticky clear" style="width: 100%;">
@@ -43,9 +45,13 @@
         <div class="container-fluid">
             <div class="col-lg-12 col-md-12 col-sm-12 text-light bg-overlay-learn-home">
                 <div class="container-fluid">
-                    <div class="col-lg-3 col-md-3 col-sm-12" style="padding: 2.5em 0 0 10em;">
+                    <div class="col-lg-10 col-md-10 col-sm-12 mx-auto" style="padding: 2.5em 0 1em 0;">
                         <a class="row" href="services.html">
-                            <i class="fa fa-long-arrow-left" aria-hidden="true" style="font-size: 5vw;"></i>
+                            <button class="arrow left">
+                                <svg width="30px" height="40px" viewBox="0 0 50 80" xml:space="preserve">
+                                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                                </svg>
+                            </button>
                             <p class="content-semibold back-font">Back</p>
                         </a>
                     </div>
@@ -117,10 +123,14 @@
                     </div>
                 </main>
                 <div class="col-lg-12">
-                    <div class="col-lg-6 col-md-6 col-sm-12 ml-auto" style="padding: 5em 0 5em 0;">
-                        <a class="row" href="learn-more-commercial.html">
+                    <div class="col-lg-10 col-md-10 col-sm-12 mx-auto" style="padding: 5em 0 5em 0;">
+                        <a class="row justify-content-end" href="learn-more-commercial.html">
                             <p class="content-semibold forward-font">Comercial/Residential Construction Process</p>
-                            <i class="fa fa-long-arrow-right" aria-hidden="true" style="font-size: 5vw;"></i>
+                            <button class="arrow right">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="40px" viewBox="0 0 50 80" xml:space="preserve">
+                                <polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                                </svg>
+                            </button>
                         </a>
                     </div>
                 </div>
