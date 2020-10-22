@@ -6,41 +6,42 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/button.css">
     </head>
     <body>
-        <nav id="nav" class="navbar navbar-fixed-top navbar-expand-lg navbar-light justify-content-between sticky clear" style="width: 100%">
+        <nav id="nav" class="navbar navbar-fixed-top navbar-expand-lg navbar-dark justify-content-between sticky clear" style="width: 100%;">
             <a class="navbar-brand" href="#">
                 <img id="logo" src="./images/logo-medium.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="color: white;">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="nav navbar-nav align-items-end">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="index.html"><h3>HOME</h3></a>
+                        <a class="nav-link text-light" href="index.html"><h3 class="nav-header">HOME</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="about.html"><h3>ABOUT</h3></a>
+                        <a class="nav-link text-light" href="about.html"><h3 class="nav-header">ABOUT</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="services.html"><h3>SERVICES</h3></a>
+                        <a class="nav-link text-light" href="services.html"><h3 class="nav-header">SERVICES</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="gallery.html"><h3>GALLERY</h3></a>
+                        <a class="nav-link text-light" href="gallery.html"><h3 class="nav-header">GALLERY</h3></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="contact.html"><h3>CONTACT</h3></a>
+                        <a class="nav-link text-light" href="contact.html"><h3 class="nav-header">CONTACT</h3></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <div class="row title-banner" style="background-image: url('./images/landing-banner.jpg'); background-size: 100% 100%; object-fit: cover;">
+        <div class="row title-banner">
             <div class="title-banner-text">
                 <div class="title">CREDIBILITY</div>
                 <div class="title">CONSISTENCY</div>
                 <div class="title">CONSTRUCTIVENESS</div>
-                <a role="button" href="gallery.html" class="btn btn-lg shadow-lg" style="font-size: 1.75em; margin-top: 50px; margin-left: 15px; padding-left: 25px; padding-right: 25px;">View Projects</a>
+                <a role="button" href="gallery.html" class="btn btn-lg shadow-lg title-button">View Projects</a>
 
             </div>
         </div>
@@ -48,11 +49,11 @@
         <div class="container-fluid">
             <div class="row section bg-dark bg-overlay-home-construction">
                 <div class="container-fluid d-flex align-items-center">
-                    <div class="row d-flex align-items-center justify-content-around">
-                        <img class="col-lg-5" src="images/2.jpg"/>
-                        <div class="col-lg-5 text-light align-self-start">
-                            <div><h3 class="content-heading" style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">Construction Service</h3></div>
-                            <p style="font-size: 20pt;">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients.</p>
+                    <div class="row d-flex align-items-center">
+                        <img class="col-lg-4 col-md-4 ml-auto" src="images/2.jpg"/>
+                        <div class="col-lg-5 col-md-5 mx-auto text-light align-self-start">
+                            <div><h3 class="content-heading">Construction Service</h3></div>
+                            <p class="content">From customized single detached homes new construction to residential tenant improvement, full-home remodeling, and commercial renovation, Credton Construction places great emphasis on our hands-on style project management, quality control, vetted workers, and specialized contractors to deliver the highest level of quality to our clients.</p>
                         </div>
                     </div>
                 </div>
@@ -60,12 +61,12 @@
 
             <div class="row section bg-light">
                 <div class="container-fluid d-flex align-items-center">
-                    <div class="row d-flex align-items-center justify-content-around">
-                        <div class="col-lg-5 text-dark align-self-start">
-                            <div><h3 class="content-heading" style="font-size: 35pt; font-weight: 900; padding-top: 20px; padding-bottom: 20px;">From Vision to Reality</h3></div>
-                            <p style="font-size: 20pt;">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget.</p>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-5 col-md-5 mx-auto text-dark align-self-start">
+                            <div><h3 class="content-heading">From Vision to Reality</h3></div>
+                            <p class="content">We turn the vision you dream of into a reality of excitement! Our designers and planners work closely with you to ensure the value of your investment will be maximized and every aspect of your project will be done to the best result within your budget.</p>
                         </div>
-                        <img class="col-lg-5" src="images/12.jpg"/>
+                        <img class="col-lg-4 col-md-4 mr-auto" src="images/12.jpg"/>
                     </div>
                 </div>
             </div>
@@ -76,16 +77,34 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/2.jpg" alt="First slide">
+                            <a href="gallery.html">
+                                <img class="d-block w-100" src="images/Homeslideshow/2.jpg" alt="First slide">
+                            </a>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/3.jpg" alt="Second slide">
+                            <a href="gallery.html">
+                                <img class="d-block w-100" src="images/Homeslideshow/1.jpg" alt="Second slide">
+                            </a>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/5.jpg" alt="Third slide">
+                            <a href="gallery.html">
+                                <img class="d-block w-100" src="images/Homeslideshow/3.jpg" alt="Third slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="gallery.html">
+                                <img class="d-block w-100" src="images/Homeslideshow/5.jpg" alt="Third slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="gallery.html">
+                                <img class="d-block w-100" src="images/Homeslideshow/6.jpg" alt="Third slide">
+                            </a>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,43 +121,49 @@
 
             <div class="row bg-dark bg-overlay-home-construction">
                 <div class="container-fluid d-flex align-items-center">
-                    <h3 class="content-heading mx-auto text-light align-self-end" style="font-size: 45px; font-weight: 900; padding-top: 1em;">Our Services</h3>
+                    <h3 class="content-heading mx-auto text-light align-self-end">Our Services</h3>
                 </div>
 
-                <div class="container-fluid d-flex justify-content-around" style="width: 100%;">
-                    <div class="col-lg-4 text-light text-center">
-                        <span class="mx-auto" style="font-size: 120px;">
-                            <img src="./images/services-icon-1.png" alt="" style="width: 1em; padding-bottom: 0.1em;">
+                <div class="row container-fluid d-flex justify-content-around">
+                    <div class="col-lg-4 col-md-4 text-light text-center">
+                        <span class="mx-auto" style="font-size: 6.5vw;">
+                            <img src="./images/services-icon-1.png" alt="" class="construction-icon">
                         </span>
-                        <p style="font-size: 40px;">New Home Construction</p>
+                        <p class="construction-title">New Home Construction</p>
                     </div>
-                    <div class="col-lg-4 text-light  text-center">
-                        <span classes="mx-auto" style="font-size: 120px;">
-                            <img src="./images/services-icon-2.png" alt="" style="width: 1em; padding-bottom: 0.1em;">
+                    <div class="col-lg-4 col-md-4 text-light text-center">
+                        <span classes="mx-auto" style="font-size: 6.5vw;">
+                            <img src="./images/services-icon-2.png" alt="" class="construction-icon">
                         </span>
-                        <p style="font-size: 40px;">Commercial / Residential Renovation</p>
+                        <p class="construction-title">Commercial / Residential Renovation</p>
                     </div>
                 </div>
                 <div class="container-fluid d-flex align-items-center col-lg-12 text-light text-center" style="padding-bottom: 3em;">
-                    <button type="button" class="btn btn-danger mx-auto btn-lg" style="font-size: 20pt; padding: 0.5em 25px 0.5em 25px;">Learn More</button>
+                    <a role="button" href="about.html" class="btn btn-danger mx-auto btn-lg" class="red-button">Learn More</a>
                 </div>
             </div>
 
             <div class="row small-section bg-light">
-                <div class="container d-flex align-items-center">
-                    <h1 class="text-danger" style="font-size: 60px;">Get in touch with us today</h1>
+                <div class="d-flex align-items-center get-in-touch w-100">
+                    <h1 style="font-size: 3.5vw; color: #B62D3C">Get in touch with us today</h1>
+                    <button class="arrow right">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="none" stroke="#B62D3C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                        0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                        </svg>
+                    </button>
                 </div>
             </div>
 
             <!-- Footer -->
             <div class="row footer bg-dark">
-                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
-                    <div style="font-size: 1em; padding-left: 10vh;">
-                        <img src="./images/logo-medium.png" alt="">
+                <div class="row col-lg-3 col-md-12 col-sm-12 text-light align-items-top mx-auto">
+                    <div class="mx-auto">
+                        <img class="footer-logo" src="./images/logo-medium.png" alt="">
                     </div>
                 </div>
-                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
-                    <div style="font-size: 1.5em; padding-left: 10vh;">
+                <div class="row col-lg-3 col-md-4 col-sm-4 text-light align-items-top">
+                    <div class="footer-text">
                         <ul class="fa-ul">
                             <li><b>About</b> </li>
                             <li><span class="fa-li"><i class="fa fa-home"></i></span>Richmond, BC</li>
@@ -147,8 +172,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row col-lg-3 col-sm-4 text-light  align-items-center">
-                    <div style="font-size: 1.5em; padding-left: 10vh;">
+                <div class="row col-lg-3 col-md-4 col-sm-4 text-light align-items-top">
+                    <div class="footer-text">
                         <ul class="fa-ul">
                             <li><b>Clients</b> </li>
                             <li>22nd Steet - Urban Studio</li>
@@ -158,8 +183,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row col-lg-3 col-sm-4 text-light align-items-center">
-                    <div style="font-size: 1.5em; padding-left: 10vh;">
+                <div class="row col-lg-3 col-md-4 col-sm-4 text-light align-items-top">
+                    <div class="footer-text">
                         <ul class="fa-ul">
                             <li><b>Links</b> </li>
                             <li><a class="text-light" href="index.html">Home</a></li>
@@ -171,8 +196,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row section copyright">
-                <span class="text-light mx-auto align-self-center" style="font-size: 1.5em;">Copyright &#169; 2020 Credton Construction</span>
+            <div class="row copyright">
+                <span class="text-light mx-auto align-self-center copyright-font">Copyright &#169; 2020 Credton Construction</span>
             </div>
             <!-- End Footer -->
         </div>

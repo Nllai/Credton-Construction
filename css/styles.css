@@ -8,11 +8,7 @@ body {
     background: transparent;
 }
 
-.banner {
-    width: 100%;
-    height: 75vh;
-    object-fit: cover;
-}
+
 
 .sub-about-banner {
     background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../images/head/about.jpg');
@@ -63,12 +59,6 @@ body {
     height: 100%;
 }
 
-.navbar-brand img {
-    padding-top: 1vw;
-    padding-left: 4vw;
-    padding-bottom: 1vw;
-    height: inherit;
-}
 
 .nav-item {
     padding: 15px;
@@ -78,38 +68,14 @@ body {
     padding-right: 60px;
 }
 
-/* title text */
-
-@media only screen and (max-width: 768px) {
-    .title {
-        font-size: 8vw;
-        font-weight: 500;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .title {
-        font-size: 4vw;
-        font-weight: 500;
-    }
-}
-
-.subpage-title {
-    font-family: OpenSansBold;
-    font-size: 95px;
-    font-weight: 400;
-    color: white;
-}
-
-/* title text end */
-
 
 /* section heights */
 
 .title-banner {
+    background-image: url('../images/landing-banner.jpg');
     height: 100vh;
-    width: 100%;
     margin: 0;
+    background-size: cover;
 }
 
 .about-banner {
@@ -133,16 +99,13 @@ body {
     height: 30vh;
 }
 
-.section {
-    height: 90vh;
-}
+
 
 .small-section {
     height: 30vh;
 }
 
 .contact-section {
-    height: 64vh;
     background-color: #333333;
 }
 
@@ -152,21 +115,401 @@ body {
 /* banner-text */
 
 @media only screen and (max-width: 768px) {
+    body{
+        width: 100vw;
+    }
+
+    .title {
+        font-size: 8vw;
+        font-weight: 500;
+        line-height:  8vw;
+    }
+
+    .subpage-title {
+        font-family: OpenSansBold;
+        font-size: 8vw;
+        font-weight: 400;
+        color: white;
+    }
+
+    .nav-header {
+        font-size: 6vw;
+        font-weight: 500;
+    }
+
     .title-banner-text {
         font-family: OpenSansBold;
         position: absolute;
-        bottom: 30vh;
+        bottom: 10vh;
         left: 5vw;
+    }
+    .footer-text {
+        padding-left: 5vw;
+    }
+
+    .section {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .content-heading {
+        font-family: OpenSansBold;
+        font-size: 5vw;
+        font-weight: 900;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .content {
+        font-size: 3vw;
+    }
+    .footer-logo {
+        width: 80vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .banner {
+        width: 100%;
+        object-fit: cover;
+    }
+    .construction-icon {
+        width: 13vw;
+        padding-bottom: 0.2em;
+    }
+    .construction-title {
+        font-size: 5vw;
+    }
+    .red-button {
+        font-size: 1.5vw;
+        padding: 0.5em 25px 0.5em 25px;
+    }
+    .title-button {
+        font-size: 5vw;
+        margin-top: 50px;
+        margin-left: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .navbar-brand img {
+        padding-top: 1vw;
+        padding-left: 4vw;
+        width: 70vw;
+    }
+
+    .scrolled-logo {
+        width: 45vw !important;
+    }
+    .scrolled {
+        background-color: #333333 !important;
+        transition: background-color 300ms linear;
+        height: 20vw;
+      }
+
+    .not-scrolled {
+        background-color: transparent;
+        transition: background-color 300ms linear;
+        height: 20vh;
+      }
+    .navbar-collapse {
+        background:#333333;
+    }
+    .about-icons {
+        margin-right: auto !important;
+    }
+    .about-section-padding {
+        padding: 3em 0 3em 0;
+    }
+    .service-heading {
+        font-family: OpenSansBold;
+        font-size: 5vw;
+        padding-bottom: 50px;
+    }
+    .service-content {
+        font-size: 3vw;
+    }
+    .services-button {
+        font-size: 2.5vw;
+        padding: 0.5em 25px 0.5em 25px;
+        margin-bottom: 2em
+    }
+
+    .modal-button {
+        position: absolute;
+        top:5px;
+        right:8px;
+        z-index: 9999;
+    }
+    .footer-map {
+        width: 70vw;
+        height: 27vh;
+    }
+    .copyright {
+        background-color: black;
+        height: 6vh;
+    }
+    .copyright-font {
+        font-size: 3vw;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        width: 100vw;
+    }
+
+    .title {
+        font-size: 6vw;
+        font-weight: 500;
+        line-height:  6vw;
+    }
+
+    .subpage-title {
+        font-family: OpenSansBold;
+        font-size: 8vw;
+        font-weight: 400;
+        color: white;
+    }
+
+    .nav-header {
+        font-size: 8vw;
+        font-weight: 500;
+    }
+
+    .title-banner-text {
+        font-family: OpenSansBold;
+        position: absolute;
+        bottom: 10vh;
+        left: 5vw;
+    }
+    .footer-text {
+        padding-left: 5vw;
+    }
+
+    .section {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .content-heading {
+        font-family: OpenSansBold;
+        font-size: 3vw;
+        font-weight: 900;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer-logo {
+        width: 30vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .banner {
+        width: 100%;
+        object-fit: cover;
+    }
+    .construction-icon {
+        width: 7vw;
+        padding-bottom: 0.1em;
+    }
+    .construction-title {
+        font-size: 2.2vw;
+    }
+    .red-button {
+        font-size: 1.5vw;
+        padding: 0.5em 25px 0.5em 25px;
+    }
+    .title-button {
+        font-size: 2.5vw;
+        margin-top: 50px;
+        margin-left: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .navbar-brand img {
+        padding-top: 1vw;
+        padding-left: 4vw;
+        width: 30vw;
+    }
+
+    .scrolled-logo {
+        width: 20vw !important;
+    }
+    .scrolled {
+        background-color: #333333 !important;
+        transition: background-color 300ms linear;
+        height: 10vw;
+      }
+
+    .not-scrolled {
+        background-color: transparent;
+        transition: background-color 300ms linear;
+        height: 20vh;
+      }
+    .navbar-collapse {
+        background:#333333;
+    }
+    .about-section-padding {
+        padding: 5em 0 5em 0;
+    }
+    .service-heading {
+        font-family: OpenSansBold;
+        font-size: 1.4vw;
+        padding-bottom: 50px;
+    }
+    .services-button {
+        font-size: 1.5vw;
+        padding: 0.5em 25px 0.5em 25px;
+    }
+    .modal-button {
+        display: none;
+    }
+    .footer-map {
+        width: 35vw;
+        height: 27vh;
+    }
+    .copyright {
+        background-color: black;
+        height: 7vh;
+    }
+    .copyright-font {
+        font-size: 1vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .title {
+        font-size: 4vw;
+        font-weight: 500;
+        line-height:  4vw;
+    }
+
+    .subpage-title {
+        font-family: OpenSansBold;
+        font-size: 4vw;
+        font-weight: 400;
+        color: white;
+    }
+
+    .nav-header {
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
+
     .title-banner-text {
         font-family: OpenSansBold;
         position: absolute;
         bottom: 5vh;
         left: 5vw;
     }
+    .footer-text {
+        font-size: 1.3vw;
+        padding-left: 10vh;
+        padding-top: 10vh;
+    }
+
+    .section {
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+    .content-heading {
+        font-family: OpenSansBold;
+        font-size: 2vw;
+        font-weight: 900;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .content {
+        font-family: OpenSans;
+        font-size: 1.2vw;
+    }
+    .footer-logo {
+        width: 20vw;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+    .banner {
+        width: 100%;
+        height: 75vh;
+        object-fit: cover;
+    }
+
+    .construction-icon {
+        width: 7vw;
+        padding-bottom: 0.1em;
+    }
+    .construction-title {
+        font-size: 2.2vw;
+    }
+    .red-button {
+        font-size: 1.5vw;
+        padding: 0.5em 25px 0.5em 25px;
+    }
+    .title-button {
+        font-size: 1.5vw;
+        margin-top: 50px;
+        margin-left: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .navbar-brand img {
+        padding-top: 1vw;
+        padding-left: 4vw;
+        width: 20vw;
+    }
+
+    .scrolled-logo {
+        width: 13vw !important;
+    }
+    .scrolled {
+        background-color: #333333 !important;
+        transition: background-color 300ms linear;
+        height: 5vw;
+      }
+
+    .not-scrolled {
+        background-color: transparent;
+        transition: background-color 300ms linear;
+        height: 20vh;
+      }
+    .about-section-padding {
+        padding: 10em 0 10em 0;
+    }
+    .about-image {
+        padding-bottom: 0.5em; padding-right: 0.2em;
+    }
+    .service-heading {
+        font-family: OpenSansBold;
+        font-size: 1.4vw;
+        padding-bottom: 50px;
+    }
+    .services-button {
+        font-size: 1vw;
+        padding: 0.5em 25px 0.5em 25px;
+    }
+    .card-1 {
+        margin: 0 1% 50px auto; padding: 30px 6% 50px 6%;
+    }
+    .card-2 {
+        margin: 0 auto 50px 1%; padding: 30px 6% 50px 6%;
+    }
+    .modal-button {
+        display: none;
+    }
+    .footer-map {
+        width: 30vw;
+        height: 27vh;
+    }
+    .copyright {
+        background-color: black;
+        height: 7vh;
+
+    }
+    .copyright-font {
+        font-size: 1vw;
+    }
+}
+
+.card {
+    background-color: black;
 }
 
 .subpage-banner-text {
@@ -194,36 +537,19 @@ body {
   }
 
 .carousel-indicators li {
-    width: 20px;
-    height: 20px;
+    width: 1vw;
+    height: 1vw;
     border-radius: 100%;
 }
 
 /* carousel styling end*/
 
-@media only screen and (max-width: 768px) {
-    .footer {
-        height: 100vh;
-    }
-
-}
 
 
-@media only screen and (min-width: 768px) {
-    .footer {
-        height: 45vh;
-    }
 
-}
 
-.copyright {
-    background-color: black;
-    height: 7vh;
-}
 
-.card {
-    background-color: black;
-}
+
 
 .container-fluid {
     margin-bottom: 0;
@@ -231,14 +557,9 @@ body {
 }
 
 
-@media only screen and (max-width: 768px) {
-body{
-    width: 100vh;
-}
 
-}
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 
     html {
         scroll-behavior: smooth;
@@ -252,7 +573,6 @@ body{
     background-size: cover;
     background-position: center center;
     color: #fff;
-    padding: 10em 0 10em 0;
 }
 .bg-overlay-2 {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-1.jpg');
@@ -260,7 +580,6 @@ body{
     background-size: cover;
     background-position: center center;
     color: #fff;
-    padding: 10em 0 10em 0;
 }
 .bg-overlay-3 {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/bg-6.jpg');
@@ -268,7 +587,6 @@ body{
     background-size: cover;
     background-position: center center;
     color: #fff;
-    padding: 10em 0 10em 0;
 }
 
 .bg-overlay-4 {
@@ -277,7 +595,6 @@ body{
     background-size: cover;
     background-position: center center;
     color: #fff;
-    padding: 10em 0 10em 0;
 }
 
 .bg-overlay-service-1 {
@@ -378,15 +695,7 @@ a {
 
 
 
-.content-heading {
-    font-family: OpenSansBold;
-    font-size: 2.5em;
-}
 
-.content {
-    font-family: OpenSans;
-    font-size: 1.5em;
-}
 
 .btn {
     font-family: OpenSansSemi;
@@ -399,25 +708,14 @@ a {
     transition: 2s;
 }
 
-.scrolled {
-    background-color: #333333 !important;
-    transition: background-color 300ms linear;
-  }
 
-.not-scrolled {
-    background-color: transparent;
-    transition: background-color 300ms linear;
-  }
 
 .bg-dark {
     background-color: #333333 !important;
 }
 
 
-.about-section-padding {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+
 
 .modal {
     z-index: 99999;
@@ -434,6 +732,9 @@ a {
     object-fit: cover;
     object-position: center 70%;
 }
+
+
+
 
 
 ul a:hover{
@@ -455,3 +756,11 @@ ul a:hover{
       transform: scaleX(1);
       transition: transform .3s;
   }
+
+.get-in-touch {
+    background-image: url('../images/background/color_pallet.jpg');
+    padding-left: 20vw;
+    margin: 0;
+    background-size: cover;
+
+}
