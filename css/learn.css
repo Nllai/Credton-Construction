@@ -135,11 +135,11 @@ main {
       width: 100vw;
   }
   .back-font {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: auto 0 auto 1em;
   }
   .forward-font {
-    font-size: 1.5em;
+    font-size: 0.8em;
     margin: auto 1em auto 0;
   }
   .home-title {
