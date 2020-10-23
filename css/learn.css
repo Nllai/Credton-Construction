@@ -37,6 +37,7 @@ main {
 
 .item:nth-child(odd) {
   border-right: 3px solid;
+  border-left: 0px;
   padding-top: 0;
 }
 
@@ -47,6 +48,7 @@ main {
 
 .item:nth-child(even) {
   border-left: 3px solid;
+  border-right: 0px;
   padding-top: 0;
 }
 .item:nth-child(even):before {
