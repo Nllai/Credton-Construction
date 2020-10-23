@@ -789,7 +789,7 @@ ul a:hover{
   }
 
 .get-in-touch {
-    background-image: url('../images/background/color_pallet.jpg');
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../images/background/color_pallet.jpg');
     margin: 0;
     background-size: cover;
 
