@@ -9,7 +9,6 @@ main {
 .item {
   font-size: 1em;
   line-height: 1.75em;
-  border-top: 3px solid;
   border-image: linear-gradient(to right, white 0%, white 100%);
   border-image-slice: 1;
   margin: 0;
@@ -18,7 +17,6 @@ main {
   position: relative;
   color: white;
   line-height: 2.5em;
-  border-top: 3px solid;
 }
 
 .item:before {
@@ -37,6 +35,7 @@ main {
 
 .item:nth-child(odd) {
   border-right: 3px solid;
+  border-left: 0px;
   border-bottom: 3px solid;
   padding-top: 0;
 }
@@ -48,6 +47,7 @@ main {
 
 .item:nth-child(even) {
   border-left: 3px solid;
+  border-right: 0px;
   border-bottom: 3px solid;
   padding-top: 0;
 }
@@ -136,11 +136,11 @@ main {
       width: 100vw;
   }
   .back-font {
-    font-size: 1em;
+    font-size: 1.5em;
     margin: auto 0 auto 1em;
   }
   .forward-font {
-    font-size: 0.8em;
+    font-size: 1.5em;
     margin: auto 1em auto 0;
   }
   .home-title {
