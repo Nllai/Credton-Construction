@@ -18,6 +18,7 @@ main {
   position: relative;
   color: white;
   line-height: 2.5em;
+  border-top: 3px solid;
 }
 
 .item:before {
