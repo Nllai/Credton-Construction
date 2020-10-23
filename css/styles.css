@@ -99,7 +99,7 @@ body {
 
 
 .small-section {
-    height: 30vh;
+    height: 20vh;
 }
 
 .contact-section {
@@ -254,6 +254,9 @@ body {
         margin: 10vh auto 60px auto;
         padding: 0px 35px 0px 35px;
     }
+    .get-in-touch-text {
+        font-size: 6vw;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -385,6 +388,9 @@ body {
     .service-section {
         margin: 10vh auto 60px auto;
         padding: 0px 35px 0px 35px;
+    }
+    .get-in-touch-text {
+        font-size: 6vw;
     }
 }
 
@@ -530,6 +536,11 @@ body {
         margin: 20vh auto 60px auto;
         padding: 0px 35px 0px 35px;
     }
+    .get-in-touch-text {
+        font-size: 3em;
+        text
+    }
+
 }
 
 .card {
@@ -779,8 +790,8 @@ ul a:hover{
 
 .get-in-touch {
     background-image: url('../images/background/color_pallet.jpg');
-    padding-left: 20vw;
     margin: 0;
     background-size: cover;
 
 }
+

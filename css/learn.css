@@ -132,11 +132,11 @@ main {
       width: 100vw;
   }
   .back-font {
-    font-size: 5vw;
+    font-size: 1.5em;
     margin: auto 0 auto 1em;
   }
   .forward-font {
-    font-size: 3.5vw;
+    font-size: 1.5em;
     margin: auto 1em auto 0;
   }
   .home-title {
@@ -158,11 +158,11 @@ main {
     width: 100vw;
   }
   .back-font {
-    font-size: 1.3vw;
+    font-size: 1.5em;
     margin: auto 0 auto 1em;
   }
   .forward-font {
-    font-size: 1.3vw;
+    font-size: 1.5em;
     margin: auto 1em auto 0;
   }
   .home-title {
@@ -181,11 +181,11 @@ main {
 
 @media only screen and (min-width: 992px) {
   .back-font {
-    font-size: 1.3vw;
+    font-size: 1.5em;
     margin: auto 0 auto 1em;
   }
   .forward-font {
-    font-size: 1.3vw;
+    font-size: 1.5em;
     margin: auto 1em auto 0;
   }
   .home-title {
