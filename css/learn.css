@@ -39,6 +39,7 @@ main {
   border-right: 3px solid;
   padding-top: 0;
 }
+
 .item:nth-child(odd):before {
   left: 100%;
   margin-left: -1.5em;
