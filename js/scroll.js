@@ -18,14 +18,12 @@ var loadMore = function() {
 
 window.onscroll = function(ev) {
   if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - document.querySelector('#footer').offsetHeight
-        && loading == false && currentSection != "pg-3") {
-    console.log('flag')
+        && loading == false && currentSection != "pg-4") {
     showSpinner()
     loading = true;
     setTimeout(function(){ loadMore(); }, 800);
   }
   if ((window.pageYOffset) > 0) {
-    console.log('flag')
     if (!("scrolled" in document.getElementById("nav").classList)){
           document.getElementById("nav").classList.add("scrolled");
           document.getElementById("nav").classList.remove("not-scrolled");
