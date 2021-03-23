@@ -587,8 +587,8 @@ body {
     }
 
     .section {
-        padding-top: 10vw;
-        padding-bottom: 10vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
     }
     .content-heading {
         font-family: OpenSansBold;

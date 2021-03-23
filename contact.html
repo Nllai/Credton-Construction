@@ -45,27 +45,27 @@
             <!-- Contact -->
             <div class="row contact-section text-light">
                     <div class="row col-lg-10 mx-auto">
-                        <form class="col-lg-6" style="padding: 50px;">
+                        <form method="POST" class="col-lg-6 gform" style="padding: 50px;" novalidate="novalidate" action="https://script.google.com/macros/s/AKfycbwynPLOWulE8RmxbKR2N3YJ0fFjliwh_9FIAYkwOg5_zckmyoPu4Kk2WpfXUPs3eS0/exec">
                             <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="inputEmail4">First Name</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <input type="text" class="form-control" id="inputAddress" name="First Name:">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="inputPassword4">Last Name</label>
-                                <input type="password" class="form-control" id="inputPassword4">
+                                <input type="text" class="form-control" id="inputAddress" name="Last Name:">
                             </div>
                             </div>
                             <div class="form-group">
                             <label for="inputAddress">Email</label>
-                            <input type="text" class="form-control" id="inputAddress">
+                            <input type="text" class="form-control" id="inputAddress" name="Email:">
                             </div>
                             <div class="form-group" style="height: 20vh;">
                             <label for="inputAddress2">Message</label>
-                            <input type="text" class="form-control" id="inputAddress2" style="height: 80%;">
+                            <input type="text" class="form-control" id="inputAddress2" style="height: 80%;" name="Message:">
                             </div>
                             <div class="container-fluid text-light">
-                                <button type="button" class="btn btn-danger btn-lg" style="font-size: 20pt; font-weight: 900;">Send</button>
+                                <button type="submit" class="btn btn-danger btn-lg" style="font-size: 20pt; font-weight: 900;">Send</button>
                             </div>
                         </form>
                         <div class="col-lg-6" style="padding: 50px;">
@@ -127,5 +127,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script data-cfasync="false" type="text/javascript" src="./js/email.js"></script>
     </body>
 </html>
